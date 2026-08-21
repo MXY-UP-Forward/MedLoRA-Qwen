@@ -1,0 +1,10 @@
+实验名,r,lora_alpha,target_modules,max_train_samples,max_length,epochs,grad_accum,lr,train_loss,eval_loss,输出目录
+baseline_lora,r8,16,all,640,512,1,8,2e-4,2.746,2.789,outputs/qwen-medical-lora
+r4_ablation,r4,16,all,200,512,1,8,2e-4,2.699,2.875,outputs/lora-r4
+r8_ablation,r8,16,all,200,512,1,8,2e-4,2.700,2.881,outputs/lora-r8
+r16_ablation,r16,16,all,200,512,1,8,2e-4,2.702,2.873,outputs/lora-r16
+alpha8_ablation,r8,8,all,200,512,1,8,2e-4,2.718,2.854,outputs/alpha-8
+alpha16_ablation,r8,16,all,200,512,1,8,2e-4,2.700,2.884,outputs/alpha-16
+alpha32_ablation,r8,32,all,200,512,1,8,2e-4,2.693,2.882,outputs/alpha-32
+target_q_ablation,r8,16,q_proj,200,512,1,8,2e-4,2.822,3.624,outputs/target-q
+target_qkv_ablation,r8,16,q_proj+k_proj+v_proj,200,512,1,8,2e-4,2.761,3.221,outputs/target-qkv

@@ -1,0 +1,8 @@
+torch>=2.1.0
+transformers>=4.45.0
+datasets>=2.19.0
+peft>=0.12.0
+accelerate>=0.33.0
+huggingface_hub>=0.24.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
